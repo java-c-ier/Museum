@@ -1,8 +1,8 @@
-body{
+body {
     margin: 0;
 }
 
-.contain{
+.contain {
     max-width: 1000px;
     margin: 0px 50px;
     display: grid;
