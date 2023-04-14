@@ -4,7 +4,7 @@ body{
 
 .contain{
     max-width: 1000px;
-    margin: 0px 30px;
+    margin: 0px 50px;
     display: grid;
     grid-template-columns: minmax(300px);
 }
