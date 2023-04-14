@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+}
+
+.contain{
+    max-width: 1000px;
+    margin: 0px 30px;
+    display: grid;
+    grid-template-columns: minmax(300px);
+}
