@@ -1,5 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+
 body {
     margin: 0;
+    background-color: rgb(177, 205, 238);
+    /* background-image: url(src/bg.jpg); */
 }
 
 .contain {
@@ -7,4 +12,16 @@ body {
     margin: 0px 50px;
     display: grid;
     grid-template-columns: minmax(300px);
+    font-size: 40px;
+    font-family: "Dongle", sans-serif;
+}
+
+.contain div img{
+    border-radius: 2%;
+    filter: drop-shadow(12px 12px 24px black);
+}
+
+.contain div h1 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 40px;
 }
