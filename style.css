@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap');
 
 body {
     margin: 0;
@@ -34,10 +35,18 @@ body {
 }
 
 .contain .info .more{
-    font-family: 'Roboto Mono', monospace;
-    font-size: 0.5em;
+    font-family: Dongle;
+    font-size: 0.6em;
 }
 
 .contain .info p{
     text-align: justify;
+    margin: 10px;
+}
+
+.contain .info p a{
+    background: #0077b6;
+    color: white;
+    border-radius: 8px;
+    padding: 4px 12px;
 }
