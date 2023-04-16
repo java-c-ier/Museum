@@ -1,13 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap");
 
 body {
     margin: 0;
-    background: #2193b0;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #2193b0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #6dd5ed,
+        #2193b0
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #6dd5ed,
+        #2193b0
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /* background-image: url(src/bg.jpg); */
 }
 
@@ -28,32 +36,64 @@ body {
     font: bolder;
 }
 
-.contain .image img{
+.contain .image img {
     margin-top: 5rem;
-    border-radius: 3%;
-    border: 0.1rem black solid;
+    border-radius: 5%;
+    border: 1rem white solid;
     cursor: pointer;
     transition: 0.5s;
 }
 
-.contain .image img:hover{
-    opacity: 0.9    ;
-    transform: scale(105%);;
+.contain .image img:hover {
+    opacity: 0.9;
+    transform: scale(105%);
 }
 
-.contain .info .more{
+.contain .info .more {
     font-family: Dongle;
     font-size: 0.6em;
 }
 
-.contain .info p{
+.contain .info p {
     text-align: justify;
     margin: 10px;
 }
 
-.contain .info p a{
+/* .contain .info p a{
     background: #0077b6;
     color: white;
     border-radius: 8px;
     padding: 4px 12px;
+} */
+
+.contain .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.contain .popup span {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 5rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.contain .popup img {
+    height: 85%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1rem white solid;
+    border-radius: 5%;
+    object-fit: cover;
 }
