@@ -5,13 +5,12 @@
 
 body {
     margin: 0;
-    background: #2193b0; /* fallback for old browsers */
     background-image: linear-gradient(to right, #fff1eb 0%, #ace0f9 100%);
 }
 
 .contain {
     /* max-width: 1000px; */
-    margin: 0px 120px;
+    margin: 0px 10vh;
     display: grid;
     /* grid-template-columns: minmax(300px); */
     grid-template-columns: 2fr 1fr;
