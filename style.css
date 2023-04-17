@@ -5,12 +5,12 @@
 
 body {
     margin: 0;
-    background-image: linear-gradient(to right, #fff1eb 0%, #ace0f9 100%);
+    background-image: linear-gradient(75deg, #fff1eb 0%, #ace0f9 100%);
 }
 
 .contain {
     /* max-width: 1000px; */
-    margin: 0px 10vh;
+    margin: 0px 100px;
     display: grid;
     /* grid-template-columns: minmax(300px); */
     grid-template-columns: 2fr 1fr;
@@ -31,6 +31,7 @@ body {
     border: 0.3rem white solid;
     cursor: pointer;
     transition: 0.5s;
+    max-width: 110%;
 }
 
 .contain .image img:hover {
