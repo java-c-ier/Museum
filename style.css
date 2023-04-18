@@ -9,8 +9,8 @@ body {
 }
 
 .contain {
-    /* max-width: 1000px; */
-    margin: 0px 100px;
+    /* max-width: 100rem; */
+    margin: 0px 6rem;
     display: grid;
     /* grid-template-columns: minmax(300px); */
     grid-template-columns: 2fr 1fr;
@@ -32,6 +32,7 @@ body {
     cursor: pointer;
     transition: 0.5s;
     max-width: 110%;
+    min-width: 6em;
 }
 
 .contain .image img:hover {
