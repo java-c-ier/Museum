@@ -5,8 +5,7 @@
 
 body {
     margin: 0;
-    background-image: linear-gradient(75deg, #fff1eb 0%, #ace0f9 100%);
-    background-repeat: round;                      
+    background-image: linear-gradient(75deg, #fff1eb 0%, #ace0f9 125%);                 
 }
 
 .contain {
