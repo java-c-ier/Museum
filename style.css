@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap");
 
 body {
     margin: 0;
@@ -10,12 +9,11 @@ body {
 
 .contain {
     /* max-width: 100rem; */
-    margin: 0 6rem 0 4.3rem;
+    margin: 0 6rem 0 5rem;
     display: grid;
     /* grid-template-columns: minmax(300px); */
     grid-template-columns: 2fr 1fr;
-    gap: 5rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: cursive;
 }
 
@@ -31,7 +29,7 @@ body {
     border: 0.3rem white solid;
     cursor: pointer;
     transition: 0.5s;
-    max-width: 100%;
+    max-width: 95%;
     min-width: 6em;
 }
 
@@ -42,20 +40,17 @@ body {
 
 .contain .info .more {
     font-family: cursive;
-    font-size: 1.2em;
+    font-size: 1em;
+}
+
+.contain .info{
+    padding-right: 100px;
 }
 
 .contain .info p {
     text-align: justify;
     margin: 1.2em 0 ;
 }
-
-/* .contain .info p a{
-    background: #0077b6;
-    color: white;
-    border-radius: 8px;
-    padding: 4px 12px;
-} */
 
 .contain .popup {
     position: fixed;
@@ -73,8 +68,8 @@ body {
     position: absolute;
     top: 0;
     right: 10px;
-    font-size: 4.3rem;
-    font-weight: bolder;
+    font-size: 4rem;
+    font-weight: bold;
     color: whitesmoke;
 }
 
@@ -91,5 +86,6 @@ body {
 
 .contain .info strong
 {
-    font-size: 1.11em;
+    font-size: 1.1em;
+    font-weight: bolder;
 }
