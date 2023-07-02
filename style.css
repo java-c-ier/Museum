@@ -1,92 +1,148 @@
-@import url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@800&display=swap');
 
-body {
+body{
     margin: 0;
-    background-image: linear-gradient(75deg, #fff1eb 0%, #ace0f9 140%);                 
+    background-image: url(https://images.pexels.com/photos/2757549/pexels-photo-2757549.jpeg?cs=srgb&dl=pexels-elias-tigiser-2757549.jpg&fm=jpg);
+    background-color: rgb(135, 106, 106);
+    background-blend-mode: multiply;
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-attachment: local;
 }
 
-.contain {
-    /* max-width: 100rem; */
-    margin: 0 6rem 0 5rem;
-    display: grid;
-    /* grid-template-columns: minmax(300px); */
-    grid-template-columns: 2fr 1fr;
-    font-size: 1.3rem;
-    font-family: cursive;
+.header h1{
+    font-size: 50px;
+    font-family: Aleo;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
 }
 
-.contain div.header h1 {
-    font-family: "Libre Baskerville", serif;
-    font-size: 2.2em;
-    font: bolder;
+.contain{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+
 }
 
-.contain .image img {
-    margin-top: 5rem;
-    border-radius: 5%;
-    border: 0.3rem white solid;
-    cursor: pointer;
-    transition: 0.5s;
-    max-width: 95%;
-    min-width: 6em;
+.info{
+    flex-basis: 60%;
+    position: relative;
+    margin: 0 20px;
+    justify-content: center;
+    color: rgb(255, 255, 255);
 }
 
-.contain .image img:hover {
-    /* opacity: 0.9; */
-    transform: scale(102%);
+.info strong{
+    font-size: 23px;
+    font-family: Arvo;
 }
 
-.contain .info .more {
-    font-family: cursive;
-    font-size: 1em;
-}
-
-.contain .info{
-    padding-right: 100px;
-}
-
-.contain .info p {
+.info p{
+    font-size: 19px;
+    font-weight: 50;
+    margin: 20px  15px;
+    font-family: Crete Round;
     text-align: justify;
-    margin: 1.2em 0 ;
 }
 
-.contain .popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.7);
-    height: 100%;
-    width: 100%;
-    z-index: 100;
-    display: none;
+.info .more{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.contain .popup span {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 10px;
-    font-size: 4rem;
-    font-weight: bold;
-    color: whitesmoke;
+.info .more a{
+    text-decoration: none;
+    background: #1ac330;
+    color: white;
+    font-size: 21px;
+    font-weight: 100;
+    border-radius: 10px;
+    padding: 6px 10px;
 }
 
-.contain .popup img {
-    height: 85%;
-    max-width: 65%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border: 0.4rem white solid;
-    border-radius: 5%;
-    object-fit: cover;
+.image{
+    position: relative;
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 45%;
+    margin-top: 110px;
 }
 
-.contain .info strong
-{
-    font-size: 1.1em;
-    font-weight: bolder;
+.image .img{
+    width: 80%;
+    border-radius: 35px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.429);
+    transition: transform .3s;
+}
+
+.image .img:hover{
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.358);
+    transform: scale(1.03);
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    backdrop-filter: blur(50px);
+    padding: 10px;
+}
+
+@media only screen and (max-width:700px){
+    .contain{
+        flex-direction: column-reverse;
+        margin: 20px 0;
+    }
+
+    .image{
+        flex-basis: 100%;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+
+    .image .img{
+        width: 88%;
+    }
+
+    .info{
+        flex-basis: 100%;
+        margin: 0 15px;
+    }
+
+    .header h1{
+        font-size: 40px;
+        justify-content: center;
+    }
+
+    .info strong{
+        font-size: 21px;
+    }
+
+    .info p{
+        font-size: 15px;
+    }
+
+    .info .more{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer{
+        font-size: 20px;
+    }
+
+    .body{
+        background-image: url(https://images.pexels.com/photos/2757549/pexels-photo-2757549.jpeg?cs=srgb&dl=pexels-elias-tigiser-2757549.jpg&fm=jpg); 
+        background-size: cover; 
+        background-position: center center; 
+        background-repeat: no-repeat; 
+    } 
 }
