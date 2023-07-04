@@ -1,2 +1,2 @@
 # Museum
-This is a museum page
+This is a sample of a museum page containing a particular reptile species.
