@@ -120,6 +120,7 @@ footer{
     .header h1{
         font-size: 40px;
         justify-content: center;
+        text-align: center;
     }
 
     .info strong{
