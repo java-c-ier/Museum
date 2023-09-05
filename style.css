@@ -43,8 +43,8 @@ body{
 }
 
 .info p{
-    font-size: 19px;
-    font-weight: 50;
+    font-size: 17px;
+    /* font-weight: 50; */
     margin: 20px  15px;
     font-family: Crete Round;
     text-align: justify;
@@ -92,8 +92,8 @@ footer{
     color: white;
     text-align: center;
     font-size: 23px;
-    backdrop-filter: blur(50px);
-    padding: 10px;
+    /* backdrop-filter: blur(50px); */
+    padding: 80px 10px 15px;
 }
 
 footer{
@@ -103,7 +103,7 @@ footer{
 }
 
 footer .developed{
-    margin-left: 20px;
+    padding:0 50px;
 }
 
 @media only screen and (max-width:750px){
