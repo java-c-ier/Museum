@@ -150,6 +150,7 @@ footer .developed{
         font-size: 18px;
         display: flex;
         flex-direction: column;
+        padding: 20px;
     }
 
     footer div{
