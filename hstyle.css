@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@800&display=swap');
+
+body
+{
+    background-image: url(https://images.pexels.com/photos/2757549/pexels-photo-2757549.jpeg?cs=srgb&dl=pexels-elias-tigiser-2757549.jpg&fm=jpg);
+    background-color: rgb(135, 106, 106);
+    background-blend-mode: multiply;
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-attachment: local;
+    /* position: relative; */
+}
+
+*
+{
+    margin: 0; padding: 0;
+    text-decoration: none;
+    transition: .2s linear;        
+}
+
+.container
+{   padding: 15px ;
+    /* padding-top: 100px; */
+    padding-bottom: 70px;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(430px, 1fr));
+    gap: 50px;
+}
+
+header
+{
+    width: 100%;
+    font-family: Aleo;
+    font-size: 53px;
+    color: rgb(255, 255, 255);
+    padding-top: 10px ;
+    position: relative;
+    /* position: fixed; */
+    text-decoration: underline;
+    z-index: 1;
+}
+
+footer
+{
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    padding: 0px 10px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer .developed{
+    padding:0 50px;
+}
+
+.container .box
+{
+    color: white;
+    box-shadow: 5px 5px 30px rgba(0,0,0,.2);
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.container .box h2
+{
+    font-size: 20px;
+    font-family:Aleo;
+    line-height: 2;
+}
+
+.container .box img
+{
+    height: 230px;
+    width: 355px;
+    border-radius: 20px;
+}
+
+.container .box .btn
+{
+    margin-top: 10px;
+    display: inline-block;
+    background: #1ac330;
+    color: white;
+    font-size: 19px;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container .box .btn:hover
+{
+    letter-spacing: 0.4px;
+    transform: scale(1.03);
+}
+.container .box:hover
+{
+    box-shadow: 0 10px 15px rgba(0,0,0,.4);
+    transform: scale(1.02);
+}
