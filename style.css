@@ -62,22 +62,26 @@ footer .developed{
     color: white;
     box-shadow: 5px 5px 30px rgba(0,0,0,.2);
     border-radius: 20px;
-    text-align: center;
+    /* text-align: center; */
     padding-top: 25px;
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .container .box h2
 {
-    font-size: 20px;
+    font-size: 1.5em;
     font-family:Aleo;
     line-height: 2;
 }
 
 .container .box img
 {
-    height: 15em;
-    width: 25em;
+    height: 70%;
+    width: 80%;
     border-radius: 20px;
 }
 
